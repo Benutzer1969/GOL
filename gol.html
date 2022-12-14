@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link type="text/css" rel="stylesheet" href="gol.css">
+	
+	<script type="text/javascript" src="perlin.js"></script>
+	<script type="text/javascript" src="gol.js"></script>
+</head>
+	
+<body>
+<div id="karte">
+	<canvas id="spielfeld" width="1000" height="600">
+	</canvas>
+	<canvas id="seenplatte" width="1000" height="600">
+	</canvas>
+</div>
+
+<div id="ui">
+	<button id="start">Hold to run</button>
+	<button id="step">1 Step</button>
+	<button id="zurueck">Reset</button>
+	<button id="neu">New</button>
+	<button id="uiClear">Clear</button>
+	<div class="rechts">
+		Paint: 
+		<label for="paintCell"><input type="radio" name="paint" id="paintCell" checked>Cell</label>
+		<label for="paintDead"><input type="radio" name="paint" id="paintDead">Dead</label>
+		<label for="paintWater"><input type="radio" name="paint" id="paintWater">Water</label>
+		<label for="paintDry"><input type="radio" name="paint" id="paintDry">Dry</label>
+	</div>
+	<hr>
+	Cells: <input type="range" max="500" min="10" id="uiZellen" step="1" value="100"> <input class="wertanzeige" id="uiZellenInput" value="100">
+	Brushsize: <input type="range" max="50" min="1" id="uiPinsel" step="1" value="3"> <input class="wertanzeige" id="uiPinselInput" value="1">
+	<br>
+	Water: <input type="range" max="2" min="0" id="uiWasserstand" step="0.01" value="0.7">
+	Zoom: <input type="range" max="20" min="1" id="uiZoom" step="0.1" value="5">
+	Density: <input type="range" max="1" min="0" id="uiDensity" step="0.01" value="0.5">
+	<br>
+	Shoredetails: <input type="range" max="50" min="1" id="uiOverlayScale" step="1" value="10">
+	Shorepitch: <input type="range" max="30" min="1" id="uiOverlayDaempfung" step="0.5" value="5">
+	<hr>
+	Watercolor: <input type="color" value="#557AB5" id="uiWasserfarbe">
+	Cellcolor: <input type="color" value="#91763D" id="uiZellenfarbe">
+	Backgroundcolor: <input type="color" value="#B0A58F" id="uiBgfarbe">
+	
+</div>
+
+<div id="debug"></div>
+
+</body>
+</html>
