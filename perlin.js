@@ -13,6 +13,7 @@
  * attribution is appreciated.
  *
  * 2017-01-13: Edited by Christian Heisch 	
+ * 2020-12-16: Updated BL by Dieter Jäger
  */
 
 (function(global){
