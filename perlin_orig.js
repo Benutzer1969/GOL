@@ -12,6 +12,7 @@
  * Stefan Gustavson. You may use it as you see fit, but
  * attribution is appreciated.
  *
+ * 2020-12-16: Updated BL by Dieter Jäger
  */
 
 (function(global){
