@@ -1,3 +1,6 @@
+/*
+ * 2020-12-16: Create / Updated BL by Dieter Jäger
+ */
 var playTimer;
 
 var c;
